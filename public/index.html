@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>tall pups</title>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      color: #000000;
+      font-family: "Georgia", "Times New Roman", serif;
+    }
+
+    .content {
+      text-align: center;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    @font-face {
+      font-family: "Jenna Sue";
+      src: url("JennaSue.ttf") format("truetype");
+      font-display: swap;
+    }
+
+    .title {
+      font-family: "Jenna Sue", cursive;
+      font-size: clamp(3rem, 10vw, 6rem);
+      letter-spacing: 0.02em;
+    }
+
+    .subtitle {
+      font-size: clamp(1rem, 3.5vw, 1.35rem);
+    }
+
+    .cta {
+      display: inline-block;
+      align-self: center;
+      padding: 10px 20px;
+      border: 1px solid #000000;
+      text-decoration: none;
+      color: inherit;
+      font-size: 1rem;
+    }
+
+    .cta:focus-visible {
+      outline: 2px solid #000000;
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="content">
+    <div class="title">tall pups</div>
+    <div class="subtitle">bored, not broken</div>
+    <a class="cta" href="https://tallpups.creator-spring.com/">buy the shirt</a>
+  </main>
+
+
+  <!-- Firebase SDKs (CDN) -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "REMOVED",
+      authDomain: "tallpups.firebaseapp.com",
+      projectId: "tallpups",
+      storageBucket: "tallpups.firebasestorage.app",
+      messagingSenderId: "REMOVED",
+      appId: "1:REMOVED:web:a7c99a2c73969d3cf3434a",
+      measurementId: "REMOVED"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+</body>
+
+</html>
